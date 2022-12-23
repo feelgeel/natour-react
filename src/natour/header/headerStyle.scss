@@ -1,0 +1,69 @@
+.header{
+    height:95vh;
+    display: flex;justify-content: space-between;
+    background-image: linear-gradient(to right bottom,rgba($color-primary-dark, 0.8),rgba($color-primary-light, 0.8))
+    ,url(../img//hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    background-color: $color-grey-light-1;
+
+    // position: relative;
+    .logo-box{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        // position: absolute;
+        // top: 30px;
+        // left:30px;
+        // width:50px
+        
+    }
+    .logo{
+        height: 2rem;
+        width: 2rem;
+    }
+    .navigation{
+        margin-top: 2rem;
+        margin-right: 2rem;
+        // position: absolute;
+        // top: 30px;
+        // left:30px;
+        // width:50px
+        
+    }
+    .h-primary{
+        backface-visibility: hidden;
+        align-self: center;
+        text-transform: uppercase;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-main{
+            letter-spacing: 6.3rem;
+            font-weight: 400;
+            font-size: 6rem;
+            // display: block;
+            animation-name: moveInLeft;
+            animation-duration: 3s;
+        }
+        &-sub{
+            letter-spacing: 1.5rem;
+            font-weight: 400;
+            // display: block;
+            font-size: 2rem;
+            animation-name: moveInRight;
+            animation-duration: 3s;
+        }
+        &-btn{
+            margin-top: 3rem;
+            border-radius: 10rem;
+            animation-name: moveUp;
+            animation-duration:3s ;
+        }
+    }
+}
+
+
+ 

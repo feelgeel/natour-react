@@ -1,23 +1,19 @@
 import logo from './logo.svg';
-import './App.css';
+import '../src/natour/css/natour.css';
+import Header from './natour/header/Header';
+import About from './natour/about/About';
+import Features from './natour/features/Features';
+import Tours from './natour/tours/Tours';
+import Stories from './natour/stories/Stories';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <About/>
+      <Features/>
+      <Tours/>
+      <Stories/>
     </div>
   );
 }
