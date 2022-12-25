@@ -531,3 +531,64 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+}
+
+.story {
+  width: 75%;
+  background-color: white;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  padding: 5rem 5rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+  margin: 5rem 0;
+}
+.story-shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  position: relative;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(39% at 50% 50%);
+  clip-path: circle(39% at 50% 50%);
+  -webkit-transform: skewX(12deg) translateX(-3rem);
+          transform: skewX(12deg) translateX(-3rem);
+}
+.story-img {
+  height: 100%;
+}
+.story-p {
+  -webkit-transform: translateX(12deg);
+          transform: translateX(12deg);
+}
+.story-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.story:hover .story-caption {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
