@@ -1,44 +1,86 @@
 .story{
-    width:75%;
-    background-color: white;
-    box-shadow: 0 3rem 6rem rgba($color-black,.1);
-    padding: 5rem 5rem;
+    // width:55%;
+    // background-color: white;
+    // box-shadow: 0 3rem 6rem rgba($color-black,.1);
+    // padding: 5rem 5rem;
+    // transform: skewX(-12deg);
+    // margin:5rem 0;
+    //new rules
+    width: 75%;
+    margin: 5rem auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, 0.4);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: 1.6rem;
     transform: skewX(-12deg);
-    margin:5rem 0;
-    // display: flex;
     &-shape{
-        width:15rem;
-        height:15rem;
-        float:left;
+        // width:12rem;
+        // height:12rem;
+        // float:left;
+        // position: relative;
+        // overflow: hidden;
+        // border-radius: none;
+        // clip-path: circle(50% at 50% 50%);
+        // shape-outside: circle(50% at 50% 50%);
+        // transform: skewX(12deg) translateX(-3rem);
+
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        transform: translateX(-3rem) skewX(12deg);
         position: relative;
-        // background-color: red;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        -webkit-clip-path: circle(39% at 50% 50%);
-        clip-path: circle(39% at 50% 50%);
-        // transform: translateX(-3rem);
-        // transform: translateY(-3rem);
-        transform: skewX(12deg) translateX(-3rem);
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
     }
     &-img{
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
     }
     &-p{
         transform: translateX(12deg);
     }
     &-caption{
-       position: absolute; 
-       top:50%;
-        left:50%;
-        transform: translate(-50%,10%);
-        color: white;
+    //    position: absolute; 
+    //    backface-visibility: hidden;
+    //    top:50%;
+    //     left:50%;
+    //     transform: translate(-50%,10%);
+    //     color: white;
+    //     text-transform: uppercase;
+    //     text-align: center;
+    //     opacity: 0;
+    //     transition: all .5s;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
         text-transform: uppercase;
+        font-size: 1.7rem;
         text-align: center;
         opacity: 0;
         transition: all .5s;
+        backface-visibility: hidden;
     }
     &:hover &-caption{
         transform:translate(-50%,-50%);
         opacity: 1;
+    }
+    &:hover &-img{
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }

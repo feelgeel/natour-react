@@ -5,6 +5,7 @@ import About from './natour/about/About';
 import Features from './natour/features/Features';
 import Tours from './natour/tours/Tours';
 import Stories from './natour/stories/Stories';
+import Booking from './natour/booking/Booking';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features/>
       <Tours/>
       <Stories/>
+      <Booking/>
     </div>
   );
 }

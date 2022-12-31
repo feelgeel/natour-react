@@ -18,6 +18,7 @@ export default function Story() {
           *elit. Veniam, recusandae impedit praesentium
           *elit. Veniam, recusandae impedit praesentium
           *elit. Veniam, recusandae impedit praesentium
+          *elit. Veniam, recusandae impedit praesentium
 
 
       </p>
