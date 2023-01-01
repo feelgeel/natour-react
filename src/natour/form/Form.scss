@@ -1,6 +1,10 @@
 .form{
-    &-group{
+    
+    &-group:not(:last-child){
         margin-bottom: 2rem;
+    }
+    &-group:first-child{
+        margin-top: 5rem;
     }
     &-input{
         font-size: 1.5rem;
@@ -10,7 +14,7 @@
         border:none;
         font-family: inherit;
         border-bottom: 3px solid rgba($color-white,.5);
-        width:50%;
+        width:100%;
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);

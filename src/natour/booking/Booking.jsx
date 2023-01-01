@@ -11,11 +11,11 @@ export default function Booking() {
                             start booking now
                         </h2>
                         <div className="form-group">
-                            <input type="text" className="form-input" />
-                            <label For="name" className="form-label">Full name</label>
+                            <input type="text" className="form-input"  placeholder='Full Name'/>
+                            <label htmlFor='name' className="form-label">Full name</label>
                         </div>
                         <div className="form-group">
-                            <input type="email" className="form-input" />
+                            <input type="email" className="form-input"  placeholder='email address'/>
                             <label For="email" className="form-label">Email address</label>
                         </div>
                         <div className="form-group">
@@ -38,6 +38,7 @@ export default function Booking() {
 
                     </form>
                 </div>
+                <div className="booking-empty"></div>
             </div>
 
         </div>

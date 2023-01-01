@@ -3,14 +3,23 @@
     background-image: linear-gradient( to right bottom,
      $color-primary-light,$color-primary-dark);
     .booking{
+        display: flex;
         background-image:linear-gradient(105deg,rgba($color-white,0.9) 0%
        ,rgba($color-white,0.9) 50%,transparent 50%), url("../img//nat-10.jpg");
         background-size: cover;
         border-radius: 3px;
         box-shadow: 0 1.5 4rem rgba($color-black,.5);
         height: 50rem;
+        // padding: 5rem 10rem;
         &-form{
-            
+            width:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        &-empty{
+            width:50% 
         }
     }
 }
