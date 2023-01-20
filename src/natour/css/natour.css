@@ -666,6 +666,36 @@ body {
   width: 50%;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-group {
+  margin-top: 5rem;
+}
+.form-group-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-group-form-radio {
+  position: relative;
+}
+.form-group-button {
+  padding: 2rem 5rem;
+  margin-top: 2rem;
+}
 .form-group:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -687,4 +717,91 @@ body {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid rgba(85, 197, 122, 0.8078431373);
+}
+.form-input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.form-input::-webkit-input-placeholder {
+  color: #999;
+}
+.form-input:-moz-placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+.form-input:-ms-input-placeholder + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+.form-radio-label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+.form-radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid rgba(85, 197, 122, 0.8078431373);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.form-radio-button::after {
+  content: "";
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(85, 197, 122, 0.8078431373);
+  opacity: 0;
+}
+.form-radio-input:checked ~ .form-radio-label .form-radio-button::after {
+  opacity: 1;
+}
+.form-radio-input {
+  display: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }

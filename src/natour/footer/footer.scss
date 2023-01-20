@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-left{
+        display: flex;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: stretch;
+}
