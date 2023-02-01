@@ -7,6 +7,7 @@ import Tours from './natour/tours/Tours';
 import Stories from './natour/stories/Stories';
 import Booking from './natour/booking/Booking';
 import Footer from './natour/footer/Footer';
+import Popups from './natour/popups/Popups';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Stories/>
       <Booking/>
       <Footer/>
+      <Popups/>
     </div>
   );
 }
