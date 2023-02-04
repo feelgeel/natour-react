@@ -1,0 +1,11 @@
+@mixin position($position:"absolute",$top:0,$left:0) {
+   position: $position;
+   top:$top;
+   left:$left;
+  }
+@mixin position-right($position:"absolute",$top:0,$right:0) {
+   position: $position;
+   top:$top;
+   right:$right; 
+   
+  }
