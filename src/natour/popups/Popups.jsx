@@ -12,7 +12,7 @@ export default function Popups() {
             <div className="popups-right">
                     <a href="#section-tours" class="popups-close">&times;</a>
                     <h2 class="h-secondary">Start booking now</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
                     <p class="popups-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit

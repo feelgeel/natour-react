@@ -10,7 +10,7 @@
     align-items: center;
     &-content{
         width:80%;
-        height:75%;
+        height:90%;
         background-color: white;
         display: flex;
     }
@@ -23,6 +23,7 @@
     &-right{
         width: 65%;
         height: 100%;
+        padding: 5rem;
     }
     &-img-1,&-img-2{
         width:100%;
@@ -30,6 +31,12 @@
         }
     &-close{
        @include position;
+        }
+        &-text{
+            column-count: 2;
+            column-gap: 4rem;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
         }
 }
 
