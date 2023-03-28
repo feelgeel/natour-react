@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import '../src/natour/css/natour.css';
 import Header from './natour/header/Header';
 import About from './natour/about/About';
@@ -12,6 +11,7 @@ import Popups from './natour/popups/Popups';
 function App() {
   return (
     <div className="App">
+   
       <Header/>
       <About/>
       <Features/>
@@ -19,7 +19,7 @@ function App() {
       <Stories/>
       <Booking/>
       <Footer/>
-      <Popups/>
+      {/* <Popups/> */}
     </div>
   );
 }
