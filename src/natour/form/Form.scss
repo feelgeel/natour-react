@@ -1,10 +1,13 @@
 .form{
     
     &-group{
+        &-btn{
+            padding-bottom: 2rem;
+        }
         margin-top: 5rem;
         &-radio{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         &-form-radio{
             position: relative;
@@ -68,7 +71,7 @@
         display: inline-block;
         position: absolute;
         left: 0;
-        top: 0;
+        top: -50%;
         &::after{
             content:"";
             display: block;

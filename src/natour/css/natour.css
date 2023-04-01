@@ -347,7 +347,7 @@ body {
 }
 .header .logo {
   height: 2rem;
-  width: 2rem;
+  width: 5rem;
 }
 .header .navigation {
   margin-top: 2rem;
@@ -643,7 +643,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img//nat-10.jpg");
+  background-image: linear-gradient(108deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 50%), url("../img//nat-10.jpg");
   background-size: cover;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.5);
@@ -681,13 +681,15 @@ body {
 .form-group {
   margin-top: 5rem;
 }
+.form-group-btn {
+  padding-bottom: 2rem;
+}
 .form-group-radio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .form-group-form-radio {
   position: relative;
@@ -750,7 +752,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -50%;
 }
 .form-radio-button::after {
   content: "";

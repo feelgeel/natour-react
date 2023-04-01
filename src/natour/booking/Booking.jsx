@@ -35,7 +35,7 @@ export default function Booking() {
                                 </label>
                             </div>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group form-group-btn ">
                             <span className="btn btn-green form-group-button">next step</span>
                         </div>
 
