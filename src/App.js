@@ -1,5 +1,6 @@
 import '../src/natour/css/natour.css';
 import Header from './natour/header/Header';
+import Navigation from './natour/navigation/Navigation';
 import About from './natour/about/About';
 import Features from './natour/features/Features';
 import Tours from './natour/tours/Tours';
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
    
       <Header/>
+      <Navigation/>
       <About/>
       <Features/>
       <Tours/>

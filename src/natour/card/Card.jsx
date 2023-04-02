@@ -22,12 +22,12 @@ export default function Card() {
                 </div>
             </div>
             <div className="card-side card-side-back">
-                <div class="card-cta">
-                    <div class="card-price-box">
-                        <p class="card-price-only">Only</p>
-                        <p class="card-price-value">$897</p>
+                <div className="card-cta">
+                    <div className="card-price-box">
+                        <p className="card-price-only">Only</p>
+                        <p className="card-price-value">$897</p>
                     </div>
-                    <a href="#popup" class="btn btn-white">Book now!</a>
+                    <a href="#popup" className="btn btn-white">Book now!</a>
                 </div>
             </div>
         </div>

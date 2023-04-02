@@ -10,10 +10,10 @@ export default function Popups() {
                 <img  className="popups-img-2" src={img2} alt=""/>
             </div>
             <div className="popups-right">
-                    <a href="#section-tours" class="popups-close">&times;</a>
-                    <h2 class="h-secondary">Start booking now</h2>
-                    <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
-                    <p class="popups-text">
+                    <a href="#section-tours" className="popups-close">&times;</a>
+                    <h2 className="h-secondary">Start booking now</h2>
+                    <h3 className="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
+                    <p className="popups-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
                         amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
@@ -24,7 +24,7 @@ export default function Popups() {
                         vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                         euismod nisi porta.
                     </p>
-                    <a href="#" class="btn btn-green">Book now</a>
+                    <a href="#" className="btn btn-green">Book now</a>
                 </div>
         </div>
     </div>

@@ -349,10 +349,6 @@ body {
   height: 2rem;
   width: 5rem;
 }
-.header .navigation {
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
 .header .h-primary {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -402,6 +398,19 @@ body {
           animation-duration: 3s;
 }
 
+.navigation_button {
+  background-color: #fff;
+}
+.navigation_background {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(126, 213, 111, 0.8431372549), rgba(40, 180, 133, 0.9098039216));
+  z-index: 10000;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+}
 .about {
   background-color: #f7f7f7;
   padding: 40rem 0;

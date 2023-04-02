@@ -16,21 +16,21 @@ export default function Booking() {
                         </div>
                         <div className="form-group">
                             <input type="email" className="form-input" placeholder='email address' />
-                            <label For="email" className="form-label">Email address</label>
+                            <label htmlFor="email" className="form-label">Email address</label>
                         </div>
-                        <div class="form-group form-group-radio">
-                            <div class="form-radio-group">
-                                <input type="radio" class="form-radio-input" id="small" name="size" />
-                                <label for="small" class="form-radio-label">
-                                    <span class="form-radio-button"></span>
+                        <div className="form-group form-group-radio">
+                            <div className="form-radio-group">
+                                <input type="radio" className="form-radio-input" id="small" name="size" />
+                                <label htmlFor="small" className="form-radio-label">
+                                    <span className="form-radio-button"></span>
                                     Small tour group
                                 </label>
                             </div>
 
-                            <div class="form-radio-group">
-                                <input type="radio" class="form-radio-input" id="large" name="size" />
-                                <label for="large" class="form-radio-label">
-                                    <span class="form-radio-button"></span>
+                            <div className="form-radio-group">
+                                <input type="radio" className="form-radio-input" id="large" name="size" />
+                                <label htmlFor="large" className="form-radio-label">
+                                    <span className="form-radio-button"></span>
                                     Large tour group
                                 </label>
                             </div>

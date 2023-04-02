@@ -10,7 +10,7 @@ export default function Tours() {
                 <Card />
                 <Card />
             </div>
-            <a href="#" class="btn btn-green tours-btn">Discover all tours</a>
+            <a href="#" className="btn btn-green tours-btn">Discover all tours</a>
         </div>
     )
 }
