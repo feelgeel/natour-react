@@ -398,17 +398,6 @@ body {
           animation-duration: 3s;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .navigation_checkbox {
   display: none;
 }
@@ -431,15 +420,22 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  -webkit-transform: scale(80);
-          transform: scale(80);
 }
 .navigation_nav {
-  width: 100vw;
+  width: 0vw;
   height: 100vh;
+  opacity: 0;
+  position: fixed;
+  top: 0%;
+  left: 0%;
   z-index: 15000;
 }
 .navigation_list {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
   list-style: none;
 }
 .navigation_item {
@@ -463,6 +459,14 @@ body {
   color: rgba(85, 197, 122, 0.8078431373);
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
+}
+.navigation_checkbox:checked ~ .navigation_background {
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+.navigation_checkbox:checked ~ .navigation_nav {
+  opacity: 1;
+  width: 100%;
 }
 
 .about {
