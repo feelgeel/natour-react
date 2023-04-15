@@ -418,6 +418,8 @@ body {
 .navigation_icon {
   position: relative;
   margin-top: 3.5rem;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
 }
 .navigation_icon, .navigation_icon::before, .navigation_icon::after {
   width: 3rem;
@@ -516,11 +518,12 @@ body {
 .navigation_checkbox:checked + .navigation_button .navigation_icon::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  top: 0rem;
 }
 .navigation_checkbox:checked + .navigation_button .navigation_icon::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: -2rem;
+  top: 0rem;
 }
 
 .about {
@@ -970,7 +973,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,10 +983,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 90000;
 }
 .popups-content {
   width: 80%;
-  height: 90%;
+  height: 70%;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1001,6 +1005,7 @@ body {
           flex-direction: column;
 }
 .popups-right {
+  position: relative;
   width: 65%;
   height: 100%;
   padding: 5rem;
@@ -1010,7 +1015,9 @@ body {
   height: 100%;
 }
 .popups-close {
-  @incl ude position;
+  position: absolute;
+  top: 0;
+  right: 5rem;
 }
 .popups-text {
   -webkit-column-count: 2;

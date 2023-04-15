@@ -22,6 +22,7 @@
     &_icon{
         position: relative;
         margin-top:3.5rem ;
+        transition: top 0.5s ease;
         &,
         &::before,
         &::after{
@@ -130,11 +131,13 @@
     }
     &_checkbox:checked + &_button &_icon::before {
         transform: rotate(45deg);
+        top: 0rem;
+
     }
     &_checkbox:checked + &_button &_icon::after {
         
         transform: rotate(-45deg);
-        top: -2rem;
+        top: 0rem;
     }
     
     
