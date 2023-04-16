@@ -12,6 +12,7 @@ export default function Header() {
         <h3 className="h-primary-sub">is where the life happens </h3>
         <a href="" className='btn btn-white h-primary-btn'> discover our tours</a>
       </div>
+      <div className="empty"></div>
     </div>
   )
 }

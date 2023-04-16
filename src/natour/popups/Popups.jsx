@@ -3,7 +3,7 @@ import img1 from "../img/nat-8.jpg"
 import img2 from "../img/nat-7.jpg"
 export default function Popups() {
   return (
-    <div className="popups">
+    <div className="popups" id="popup">
         <div className="popups-content">
             <div className="popups-left">
                 <img className="popups-img-1" src={img1} alt=""/>
