@@ -145,9 +145,15 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
+  padding: 3rem 3rem 0rem 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
+}
+@media only screen and (max-width: 75em) {
+  body {
+    padding: 0;
+  }
 }
 
 .h-secondary {

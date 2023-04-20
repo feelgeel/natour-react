@@ -26,11 +26,11 @@ export default function About() {
                nihil velit numquam iure tenetur eaque voluptate, fuga repudiandae beatae. Ab?</p>
                <a href="" className="btn-text">learn more &rarr;</a>
             </div>
-            {/* <div className="right-side">
+            <div className="right-side">
                 <div  className="right-side-pic pic1" />
                 <div  className="right-side-pic pic2" />
                 <div  className="right-side-pic pic3" />
-            </div> */}
+            </div>
 
         </div>
       
