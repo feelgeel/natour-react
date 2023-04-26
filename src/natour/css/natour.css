@@ -150,7 +150,7 @@ body {
           box-sizing: border-box;
   background-color: white;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   body {
     padding: 0;
   }
@@ -589,7 +589,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-left: 20rem;
 }
 .about-content-heading {
   font-weight: 700;
@@ -633,16 +632,22 @@ body {
   background-image: url(../img/nat-1.jpg);
   left: 15rem;
   top: -2rem;
+  width: 30rem;
+  height: 20rem;
 }
 .right-side .pic2 {
   background-image: url(../img/nat-2.jpg);
   right: 5rem;
   top: 3rem;
+  width: 30rem;
+  height: 20rem;
 }
 .right-side .pic3 {
   background-image: url(../img/nat-3.jpg);
   left: 20rem;
   top: 10rem;
+  width: 30rem;
+  height: 20rem;
 }
 
 .features {
@@ -715,7 +720,7 @@ body {
           box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 3px;
-  padding: 6rem;
+  padding: 3rem;
   padding-left: 9rem;
   font-size: 1.6rem;
   -webkit-transform: skewX(-12deg);

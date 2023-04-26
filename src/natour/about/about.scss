@@ -11,7 +11,7 @@
     &-content{
         display: flex;
         justify-content: space-evenly;
-        padding-left: 20rem;
+        // padding-left: 20rem;
         // flex-wrap: wrap;
         &-heading{
             // font-size: 1.6rem;
@@ -59,6 +59,8 @@
        
         left: 15rem;
         top: -2rem;
+        width:30rem; 
+         height:20rem;
        
     }
     .pic2{
@@ -66,6 +68,8 @@
         background-image: url(../img/nat-2.jpg);
         right: 5rem;
         top: 3rem;
+        width:30rem; 
+        height:20rem;
 
     }
     .pic3{
@@ -73,6 +77,8 @@
         background-image: url(../img/nat-3.jpg);
         left: 20rem;
         top: 10rem;
+        width:30rem; 
+        height:20rem;
 
     }
 
