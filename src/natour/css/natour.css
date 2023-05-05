@@ -170,10 +170,93 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 56.25em) {
+  .h-secondary {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .h-secondary {
+    font-size: 2.5rem;
+  }
+}
 .h-secondary:hover {
   -webkit-transform: skewY(2deg) skewX(15deg);
           transform: skewY(2deg) skewX(15deg);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.h-primary {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.h-primary-main {
+  letter-spacing: 6.3rem;
+  font-weight: 400;
+  font-size: 6rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@media only screen and (max-width: 56.25em) {
+  .h-primary-main {
+    font-size: 4rem;
+    letter-spacing: 4.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .h-primary-main {
+    font-size: 2.5rem;
+    letter-spacing: 3.3rem;
+  }
+}
+.h-primary-sub {
+  letter-spacing: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@media only screen and (max-width: 56.25em) {
+  .h-primary-sub {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .h-primary-sub {
+    font-size: 1rem;
+    letter-spacing: 1rem;
+  }
+}
+.h-primary-btn {
+  margin-top: 3rem;
+  border-radius: 10rem;
+  -webkit-animation-name: moveUp;
+          animation-name: moveUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .btn {
@@ -386,54 +469,6 @@ body {
 .header .logo {
   height: 3.5rem;
   width: 6rem;
-}
-.header .h-primary {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-transform: uppercase;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.header .h-primary-main {
-  letter-spacing: 6.3rem;
-  font-weight: 400;
-  font-size: 6rem;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-.header .h-primary-sub {
-  letter-spacing: 1.5rem;
-  font-weight: 400;
-  font-size: 2rem;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-.header .h-primary-btn {
-  margin-top: 3rem;
-  border-radius: 10rem;
-  -webkit-animation-name: moveUp;
-          animation-name: moveUp;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
 }
 
 .navigation_checkbox {
